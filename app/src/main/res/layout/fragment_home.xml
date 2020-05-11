@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".HomeFragment"
+        android:background="@color/colorTransparentWhite"
+        android:overScrollMode="never"
+        android:scrollbarThumbVertical="@null">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/button_buy"
+                android:layout_width="176dp"
+                android:layout_height="38dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@id/divider"
+                android:background="@drawable/selector_all_edge_curve"
+                android:backgroundTint="@android:color/white"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Buy"
+                style="@style/buySellButtonStyle" />
+
+            <TextView
+                android:id="@+id/button_sell"
+                android:layout_width="176dp"
+                android:layout_height="38dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/divider"
+                android:background="@drawable/selector_all_edge_curve"
+                android:backgroundTint="@android:color/white"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Sell"
+                style="@style/buySellButtonStyle" />
+
+            <LinearLayout
+                android:id="@+id/textview_firepay_wallet"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/button_buy"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/selector_all_edge_curve"
+                android:backgroundTint="@android:color/white"
+                android:orientation="vertical"
+                android:textSize="20sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Wallet Balance"
+                    android:textColor="@color/nativeColorGreen"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/roboto_light" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorTransparentWhite" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:text="N500"
+                    android:textColor="@color/nativeColorGreen"
+                    android:textSize="50sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/roboto_light" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textview_quick_buy"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_below="@id/textview_firepay_wallet"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/selector_top_edge_curve"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Quick Buys"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/roboto_light" />
+
+            <LinearLayout
+                android:id="@+id/layout_buy_bitcoin"
+                android:layout_below="@id/textview_quick_buy"
+                android:background="@android:color/white"
+                style="@style/currencyLayoutStyle">
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:padding="16dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bitcoin_gold" />
+
+                <TextView
+                    android:text="Bitcoin"
+                    style="@style/currencyTextStyle"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/textview_quick_buy"
+                android:background="@color/colorTransparentWhite" />
+
+            <LinearLayout
+                android:id="@+id/button_buy_perfectmoney"
+                android:layout_below="@id/layout_buy_bitcoin"
+                android:background="@android:color/white"
+                style="@style/currencyLayoutStyle">
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:padding="24dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/perfectmoney_new" />
+
+                <TextView
+                    android:text="Perfect Money"
+                    style="@style/currencyTextStyle"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/button_buy_mastertrader"
+                android:layout_below="@id/button_buy_perfectmoney"
+                android:background="@android:color/white"
+                style="@style/currencyLayoutStyle">
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:padding="24dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/mastertadericon_new" />
+
+                <TextView
+                    android:text="Master Trader"
+                    style="@style/currencyTextStyle"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/button_buy_ethereum"
+                android:layout_below="@id/button_buy_mastertrader"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/selector_bottom_edge_curve"
+                style="@style/currencyLayoutStyle">
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="match_parent"
+                    android:padding="16dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ethereum_new" />
+
+                <TextView
+                    android:text="Ethereum"
+                    style="@style/currencyTextStyle" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>

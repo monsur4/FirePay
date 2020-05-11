@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/nativeColorGreen"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/currency_icon_imageview"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_below="@id/transaction_type_textview"
+            android:layout_alignBottom="@id/status_text"
+            android:src="@drawable/bitcoin_gold" />
+
+        <TextView
+            android:id="@+id/transaction_type_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/currency_icon_imageview"
+            android:layout_alignRight="@id/currency_icon_imageview"
+            android:gravity="center"
+            android:text="Buy"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/transaction_amount_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/status_icon"
+            android:layout_toRightOf="@id/currency_icon_imageview"
+            android:gravity="top|center_horizontal"
+            android:text="N500"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/status_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/toolbar_background"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_check" />
+
+        <TextView
+            android:id="@+id/status_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/status_icon"
+            android:layout_alignLeft="@id/status_icon"
+            android:layout_alignRight="@id/status_icon"
+            android:gravity="center"
+            android:text="Success"
+            android:textColor="@android:color/white"
+            android:textSize="7sp" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/transaction_amount_textview"
+            android:layout_alignBottom="@id/status_text"
+            android:layout_toLeftOf="@id/status_icon"
+            android:layout_toRightOf="@id/currency_icon_imageview"
+            android:gravity="center"
+            android:text="23|4|2019"
+            android:textColor="@android:color/white"
+            android:textSize="7sp" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    tools:context=".TransactionHistoryFragment">-->
+
+    <!--    &lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;-->
+    <!--    <TextView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:text="@string/hello_blank_fragment" />-->
+
+    <!--</FrameLayout>-->

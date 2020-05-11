@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WalletFragment">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_margin="8dp">
+
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/currencyTextStyle"
+        android:layout_marginRight="@null"
+        android:drawableRight="@null"
+        android:text="Grand Total"
+        android:gravity="center_horizontal"/>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/selector_all_edge_curve"
+        android:backgroundTint="#FFD700"
+        android:textSize="50sp"
+        android:text="N500"
+        android:textColor="@android:color/black"
+        android:gravity="center_horizontal|center_vertical"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginTop="8dp"
+           android:paddingRight="8dp"
+           android:paddingLeft="8dp">
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:textSize="20sp"
+               android:textStyle="bold"
+               android:textColor="@android:color/black"
+               android:text="Currency"
+               android:gravity="left"/>
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:textSize="20sp"
+               android:textStyle="bold"
+               android:text="Amount"
+               android:textColor="@android:color/black"
+               android:gravity="end"/>
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="60dp"
+           android:orientation="horizontal"
+           android:paddingRight="8dp"
+           android:paddingLeft="8dp">
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:textSize="15sp"
+               android:fontFamily="@font/roboto_light"
+               android:text="Bitcoin"
+               android:textColor="@android:color/black"
+               android:textStyle="bold"
+               android:gravity="center_vertical"/>
+
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:fontFamily="@font/roboto_light"
+               android:gravity="end|center_vertical"
+               android:text="2.00"
+               android:textAllCaps="false"
+               android:textSize="15sp" />
+       </LinearLayout>
+
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="0.3dp"
+           android:layout_marginRight="16dp"
+           android:layout_marginLeft="16dp"
+           android:background="@android:color/black"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="60dp"
+           android:orientation="horizontal"
+           android:layout_marginTop="8dp"
+           android:paddingRight="8dp"
+           android:paddingLeft="8dp">
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:textSize="15sp"
+               android:fontFamily="@font/roboto_light"
+               android:text="Perfect Money"
+               android:textColor="@android:color/black"
+               android:textStyle="bold"
+               android:gravity="center_vertical"/>
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:textSize="15sp"
+               android:fontFamily="@font/roboto_light"
+               android:gravity="end|center_vertical"
+               android:text="4.00" />
+       </LinearLayout>
+
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="0.3dp"
+           android:layout_marginRight="16dp"
+           android:layout_marginLeft="16dp"
+           android:background="@android:color/black"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="60dp"
+           android:orientation="horizontal"
+           android:layout_marginTop="8dp"
+           android:paddingRight="8dp"
+           android:paddingLeft="8dp">
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:textSize="15sp"
+               android:fontFamily="@font/roboto_light"
+               android:text="Master Trader"
+               android:textColor="@android:color/black"
+               android:textStyle="bold"
+               android:gravity="center_vertical"/>
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:textSize="15sp"
+               android:fontFamily="@font/roboto_light"
+               android:gravity="end|center_vertical"
+               android:text="2.00" />
+       </LinearLayout>
+
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="0.3dp"
+           android:layout_marginRight="16dp"
+           android:layout_marginLeft="16dp"
+           android:background="@android:color/black"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="60dp"
+           android:orientation="horizontal"
+           android:layout_marginTop="8dp"
+           android:paddingRight="8dp"
+           android:paddingLeft="8dp">
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:textSize="15sp"
+               android:fontFamily="@font/roboto_light"
+               android:text="Ethereum"
+               android:textColor="@android:color/black"
+               android:textStyle="bold"
+               android:gravity="center_vertical"/>
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:textSize="15sp"
+               android:fontFamily="@font/roboto_light"
+               android:gravity="end|center_vertical"
+               android:text="2.00" />
+       </LinearLayout>
+
+   </LinearLayout>
+
+</ScrollView>
